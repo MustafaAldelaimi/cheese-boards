@@ -1,6 +1,8 @@
 const {Sequelize, sequelize} = require('./db');
 
-const User = await sequelize.define('user', {
+let User
+
+User = sequelize.define('user', {
           name: Sequelize.STRING,
           email: Sequelize.STRING,
 });

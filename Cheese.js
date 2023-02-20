@@ -1,6 +1,6 @@
 const {Sequelize, sequelize} = require('./db');
 
-const Cheese = await sequelize.define('cheese', {
+const Cheese = sequelize.define('cheese', {
           title: Sequelize.STRING,
           description: Sequelize.STRING,
 });
